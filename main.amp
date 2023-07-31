@@ -5,7 +5,7 @@
     SET @CAMPAIGN = RequestParameter('campaign')
 ]%%
 
-Data Extension: %%=v(@DATA_EXTENSION)=%%
-Nombre: %%=v(@FIRST_NAME)=%%
-Email: %%=v(@EMAIL)=%%
-Campaign: %%=v(@Campaign)=%%
+Data Extension: %%=v(@DATA_EXTENSION)=%%<br />
+Nombre: %%=v(@FIRST_NAME)=%%<br />
+Email: %%=v(@EMAIL)=%%<br />
+Campaign: %%=v(@Campaign)=%%<br />
