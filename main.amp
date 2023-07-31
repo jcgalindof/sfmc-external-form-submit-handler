@@ -29,10 +29,4 @@ Data Extension: %%=v(@DATA_EXTENSION)=%%<br />
 Nombre: %%=v(@FIRST_NAME)=%%<br />
 Email: %%=v(@EMAIL)=%%<br />
 Campaign: %%=v(@Campaign)=%%<br />
-<script>
-    setTimeout(
-        function(){
-            window.location = "https://www.salesforcecancun.com" 
-        },
-    100);
-</script>
+<script src="redirect.js" type="text/javascript"></script>
