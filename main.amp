@@ -12,7 +12,7 @@ Campaign: %%=v(@Campaign)=%%<br />
 <script>
     setTimeout(
         function(){
-            window.location = "order.php?order_id=<?php echo $o_id;?>" 
+            window.location = "https://www.salesforcecancun.com" 
         },
     100);
 </script>
