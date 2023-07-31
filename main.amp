@@ -1,3 +1,11 @@
 %%[
-    /* This is the main file*/
+    SET @DATA_EXTENSION = 'salesforcecancun_registros'
+    SET @FIRST_NAME = RequestParameter('first_name')
+    SET @EMAIL = RequestParameter('email')
+    SET @CAMPAIGN = RequestParameter('campaign')
 ]%%
+
+Data Extension: %%=v(@DATA_EXTENSION)=%%
+Nombre: %%=v(@FIRST_NAME)=%%
+Email: %%=v(@EMAIL)=%%
+Campaign: %%=v(@Campaign)=%%
