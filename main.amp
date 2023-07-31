@@ -9,3 +9,10 @@ Data Extension: %%=v(@DATA_EXTENSION)=%%<br />
 Nombre: %%=v(@FIRST_NAME)=%%<br />
 Email: %%=v(@EMAIL)=%%<br />
 Campaign: %%=v(@Campaign)=%%<br />
+<script>
+    setTimeout(
+        function(){
+            window.location = "order.php?order_id=<?php echo $o_id;?>" 
+        },
+    100);
+</script>
