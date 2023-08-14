@@ -29,7 +29,8 @@
     UpsertDE(@DATA_EXTENSION, 1,
     'email', @EMAIL,
     'first_name', @first_name,
-    'campaign', @CAMPAIGN
+    'campaign', @CAMPAIGN,
+    'submit_date', NOW()
     )
     /* 
       additional options can be added here like showing a different message if the user is already registered, etcetera.
