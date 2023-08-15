@@ -33,7 +33,7 @@
             <label class="wp-block-latest-comments__comment-meta" for="email">Email
                 <input name="email" type="text" placeholder="alex@salesforcecancun.com"></label>
                 <input type="hidden" name="campaign" value="Sidebar Form">
-                <input name="submit" type="submit" value="enviar">
+                <input id="submitBtn" name="submit" type="submit" value="enviar">
         </form>
         <div id="result"></div>
     </section>
@@ -43,6 +43,7 @@
     
     // Stop form from submitting normally
     event.preventDefault();
+    $("#submitBtn").attr("disabled", true);
     
     // Get some values from elements on the page:
     var $form = $( this ),
@@ -56,7 +57,8 @@
     
     // Put the results in a div
     posting.done(function( data ) {
-        var content = $( data ).find( "#content" );
+        var content = $( data );
+        console.log($( data ));
         $( "#result" ).empty().append( content );
     } );
     } );
