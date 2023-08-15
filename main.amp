@@ -4,7 +4,7 @@
     SET @pattern = "^(https:\/\/(.*\.)?((www.cristobalgalindo)\.com))($|\/)"
     SET @match = RegExMatch(@origin, @pattern, 1)
 ]%%
-<script runat=server>
+<!--script runat=server>
     Platform.Load("core","1");
     var MATCH = Variable.GetValue("@match");
     if (!MATCH) { MATCH = null }
@@ -16,13 +16,13 @@
 	Platform.Response.SetResponseHeader("X-Content-Type-Options","nosniff"); 
 	Platform.Response.SetResponseHeader("Referrer-Policy","strict-origin-when-cross-origin"); 
 	Platform.Response.SetResponseHeader("Content-Security-Policy","default-src 'self'");
-</script>
+</script-->
 
 %%[
     /* global variables */
-    SET @DATA_EXTENSION = 'salesforcecancun_registros'
+    /*SET @DATA_EXTENSION = 'salesforcecancun_registros'*/
     /* get the values from the parameters sent by your form */
-    SET @FIRST_NAME = RequestParameter('first_name')
+    /*SET @FIRST_NAME = RequestParameter('first_name')
     SET @EMAIL = RequestParameter('email')
     SET @CAMPAIGN = RequestParameter('campaign')
     /* Insert your upsertDE function here */
@@ -31,7 +31,7 @@
     'first_name', @first_name,
     'campaign', @CAMPAIGN,
     'submit_date', NOW()
-    )
+    )/*
     /* 
       additional options can be added here like showing a different message if the user is already registered, etcetera.
     */
@@ -57,6 +57,9 @@
     <!-- place navbar here -->
   </header>
   <main>
+    %%=v(@origin)=%%<br>
+    %%=v(@pattern)=%%<br>
+    %%=v(@match)=%%
     <h1>
         ¡Gracias por registrarte!
     </h1>
@@ -79,7 +82,7 @@
     In this section we redirect the user to the original page.
    -->
   <!-- avoiding redirect for now -->
-  <script type="text/javascript" src="https://mcfmxk1g37c1jn91t2tp6mmtn3l1.pub.sfmc-content.com/wuyp1liauaj"></script>
+  <!--script type="text/javascript" src="https://mcfmxk1g37c1jn91t2tp6mmtn3l1.pub.sfmc-content.com/wuyp1liauaj"></script-->
 </body>
 
 </html>
