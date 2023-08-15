@@ -36,9 +36,11 @@
       additional options can be added here like showing a different message if the user is already registered, etcetera.
     */
 ]%%
+  <div id="content">
     <h1>
         ¡Gracias por registrarte!
     </h1>
     <h2>
         Espera noticias muy pronto.
     </h2>
+  </div>
