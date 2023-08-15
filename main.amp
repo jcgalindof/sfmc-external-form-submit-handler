@@ -26,7 +26,7 @@
     SET @EMAIL = RequestParameter('email')
     SET @CAMPAIGN = RequestParameter('campaign')
     /* Insert your upsertDE function here */
-    UpsertDE(@DATA_EXTENSION, 1,
+    /*UpsertDE(@DATA_EXTENSION, 1,
     'email', @EMAIL,
     'first_name', @first_name,
     'campaign', @CAMPAIGN,
