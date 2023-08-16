@@ -23,7 +23,7 @@ $('#theJQueryForm').validate({
             customemail: true,
             "remote":{
                 //Agregar la url de la cloudpage que contiene la validación del email, está en email-validation.amp
-                url: '',
+                url: 'https://mcfmxk1g37c1jn91t2tp6mmtn3l1.pub.sfmc-content.com/kgadpqnxldu',
                 type: "post",
                 data:
                 {
