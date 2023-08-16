@@ -70,7 +70,8 @@ $( "#theJQueryForm" ).on( "submit", function( event ) {
         form_first_name = $form.find( "input[name='first_name']" ).val(),
         form_email = $form.find( "input[name='email']" ).val(),
         form_campaign = $form.find( "input[name='campaign']" ).val(),
-        url = $form.attr( "action" );
+        //moved the url from the form action to here so it's "hidden" lol
+        url = "https://mcfmxk1g37c1jn91t2tp6mmtn3l1.pub.sfmc-content.com/ozshjgkzgho";
         // Send the data using post
         var posting = $.post( url, { first_name: form_first_name, email: form_email, campaign: form_campaign } );
         // Put the results in a div
