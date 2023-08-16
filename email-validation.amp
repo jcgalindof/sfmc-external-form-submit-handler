@@ -1,0 +1,14 @@
+%%[
+    SET @LPDE_Name = "salesforcecancun_registros"
+    SET @email_url_value = QueryParameter("unique_id")
+    IF @email_url_value != '' THEN
+        SET @validate_email_user = RowCount(LookupRows(@LPDE_Name,'email',@email_url_value)) 
+        IF @validate_email_user == '' THEN
+            SET @results = "true"
+            OUTPUT(v(@results))
+        ELSE
+            SET @results = "false"
+            OUTPUT(v(@results))
+        ENDIF
+    ENDIF
+]%%
