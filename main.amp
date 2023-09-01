@@ -37,6 +37,7 @@
     */
 ]%%
  <div id="content">
+    data extension = %%=v(@DATA_EXTENSION)=%%<br>
     first name = %%=v(@first_name)=%%<br>
     email = %%=v(@email)=%%<br>
     campaign = %%=v(@campaign)=%%
