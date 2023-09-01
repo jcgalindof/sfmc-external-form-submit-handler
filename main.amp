@@ -1,8 +1,8 @@
 %%[
     /* Aceptemos formularios envíos solo desde salesforcecancun.com*/
     SET @origin = HTTPRequestHeader("Referer")
-    SET @pattern = "^(https:\/\/)?(stageaem\.)(colgate\.)(com\.)(br)($|\/)"
-    SET @match = RegExMatch(@origin, @pattern, 1)
+    SET @pattern = "."
+    SET @match = "https://stageaem.colgate.com.br"
 ]%%
 <script runat=server>
     Platform.Load("core","1");
