@@ -37,6 +37,9 @@
     */
 ]%%
  <div id="content">
+    first name = %%=v(@first_name)=%%<br>
+    email = %%=v(@email)=%%<br>
+    campaign = %%=v(@campaign)=%%
     <h1>
         ¡Gracias por registrarte!
     </h1>
