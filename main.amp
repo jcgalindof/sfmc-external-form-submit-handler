@@ -1,7 +1,7 @@
 %%[
     /* Aceptemos formularios envíos solo desde salesforcecancun.com*/
     SET @origin = HTTPRequestHeader("Referer")
-    SET @pattern = "^(https:\/\/(.*\.)?((cristobalgalindo/)\.com))($|\/)"
+    SET @pattern = "."
     SET @match = RegExMatch(@origin, @pattern, 1)
 ]%%
 <script runat=server>
